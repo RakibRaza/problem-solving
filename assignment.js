@@ -1,3 +1,5 @@
+// https://github.com/RakibRaza/problem-solving
+
 // kilometer to meter converter
 function kilometerToMeter(kilometer) {
   // check kilometer is valid or not
@@ -39,26 +41,26 @@ function hotelCost(day) {
     return "accept only positive number.";
   }
 
-  var totalCost = 0;
-  // calculate hotel cost
+  var totalRent = 0;
+  // calculate hotel rent
   if (day <= 10) {
-    totalCost = day * 100;
+    totalRent = day * 100;
   } else if (day <= 20) {
     var firstHalf = 10 * 100;
     var remainingDay = day - 10;
     var secondHalf = remainingDay * 80;
 
-    totalCost = firstHalf + secondHalf;
+    totalRent = firstHalf + secondHalf;
   } else {
     var firstHalf = 10 * 100;
     var secondHalf = 10 * 80;
     var remainingDay = day - 20;
     var thirdHalf = remainingDay * 50;
 
-    totalCost = firstHalf + secondHalf + thirdHalf;
+    totalRent = firstHalf + secondHalf + thirdHalf;
   }
 
-  return totalCost;
+  return totalRent;
 }
 
 // mega friend
